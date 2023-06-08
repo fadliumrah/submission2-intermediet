@@ -1,0 +1,82 @@
+    Skenario pengujian pada viewmodel
+
+
+
+    1.Register
+        Skenario Positif
+            - Memastikan mengembalikan ResultData.Success
+            - Memastikan data tidak mengembalikan null
+            - Memastikan mengembalikan data sesuai dummy response
+
+        Skenario Negatif
+            - Memastikan mengembalikan ResultData.Error
+            - Memastikan data tidak mengembalikan null
+            - Memastikan data mengembalikan pesan error sesuai dummy response
+
+
+
+    2. Login
+
+        Skenario Positif
+            - Memastikan mengembalikan ResultData.Success
+            - Memastikan data tidak mengembalikan null
+            - Memastikan mengembalikan data sesuai dummy response
+
+        Skenario Negatif
+            - Memastikan mengembalikan ResultData.Error
+            - Memastikan data tidak mengembalikan null
+            - Memastikan data mengembalikan pesan error sesuai dummy response
+            
+
+
+
+    3. Membuat Story
+        Skenario Positif
+            - Memastikan data kembalian response tidak bernilai null
+            - Memastikan data mengembalikan ResultData.Success
+            - Memastikan mengembalikan data sesuai data dummy response
+
+        Skenario Negatif
+            - Memastikan data kembalian response tidak bernilai null
+            - Memastikan data mengembalikan ResultData.Error
+            - Memastikan data mengembalikan pesan error sesuai dummy response
+
+
+
+    4. Mengambil Data List Story
+        Skenario Positif
+            - Memastikan data tidak bernilai null
+            - Memastikan data memiliki panjang list yang sama dengan dummy response
+            - Memastikan data mengembalikan data yang sama dengan list dummy response
+            - Memastikan data pada index ke 0 mengembalikan sesuai dummy response index ke 0
+
+        Skenario Negatif
+            - Memastikan mengembalikan data story kosong
+            - Memastikan mengembalikan data tidak mengembalikan sesuai dummy response dengan data story
+
+
+
+    5. Mengambil data list story dengan location
+        Skenario positif
+            - Memastikan data tidak bernilai null
+            - Memastikan data mengembalikan ResultData.Success
+            - Memastikan data lokasi latitude dan longitude tidak bernilai null
+            - Memastikan mengembalikan data sesuai data dummy response
+
+        Skenario Negatif
+            - Memastikan data tidak bernilai null
+            - Memastikan data mengembalikan ResultData.Error
+            - Memastikan data lokasi latitude dan longitude bernilai null
+
+
+    6. Detail story
+        Skenario positif
+            - Memastikan data tidak bernilai null
+            - Memastikan data mengembalikan ResultData.Success
+            - Memastikan data mengembalikan sesuai data dummy Response
+
+        Skenario Negatif
+            - Memastikan data tidak bernilai null
+            - Memastikan data mengembalikan ResultData.Error
+            - Memastikan data mengembalikan pesan error sesuai dummy response
+            

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_5"
+    tools:context=".ui.RegisterA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="144dp"
+        android:text="@string/text2"
+        android:id="@+id/login"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:paddingStart="16dp"
+        android:autofillHints="name"
+        android:inputType="text"
+        android:textColor="@color/gray_5"
+        android:textColorHint="@color/gray_5"
+        android:hint="@string/input_username"
+        android:background="@drawable/custom_input"
+        android:id="@+id/username"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        tools:ignore="RtlSymmetry" />
+
+    <com.fadli.pleaselulus.custom.CustomInputEmail
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_input"
+        android:id="@+id/email"
+        android:textColor="@color/gray_5"
+        android:textColorHint="@color/gray_5"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        tools:ignore="RtlSymmetry" />
+
+    <com.fadli.pleaselulus.custom.CustomInputPassword
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_input"
+        android:paddingStart="16dp"
+        android:id="@+id/password"
+        android:textColor="@color/gray_5"
+        android:textColorHint="@color/gray_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:layout_marginTop="40dp"
+        tools:ignore="RtlSymmetry" />
+
+    <com.fadli.pleaselulus.custom.CustomButtonLogin
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:id="@+id/register"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/password" />
+
+    <com.fadli.pleaselulus.custom.CustomButtonRegister
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/return2"
+        android:id="@+id/back"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/register" />
+
+    <ProgressBar
+        android:id="@+id/pbar_login"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:indeterminateTint="@color/primary_color"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

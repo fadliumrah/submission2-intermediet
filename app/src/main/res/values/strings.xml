@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Please Lulus</string>
+    <string name="upload">Upload Image</string>
+    <string name="image">image</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="add_image">Add Image</string>
+    <string name="add_deskripsi">Add Deskripsi</string>
+    <string name="deskripsi">Masukan Deskripsi…</string>
+    <string name="add_story">Add Story</string>
+    <string name="floating">Floating</string>
+    <string name="username">Acenkz</string>
+    <string name="deskripsi2">Deskripsi</string>
+    <string name="text1">Login MyStories</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="create_account">Create Account</string>
+    <string name="register">REGISTER</string>
+    <string name="text2">Register MyStory</string>
+    <string name="input_username">Masukan Username…</string>
+    <string name="return2">RETURN</string>
+    <string name="error">Failed Get Data</string>
+</resources>
